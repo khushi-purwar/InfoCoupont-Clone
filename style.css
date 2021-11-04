@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* top navbar */
+.top_container {
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 80px;
+}
+
+.top_container i {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.top_container i:first-child {
+  background-color: rgb(95, 10, 173);
+  color: white;
+}
+
+/* middle navbar */
+
+.navbar_brand {
+  width: 60px;
+  height: 60px;
+}
+
+.mid_navbar img {
+  width: 100%;
+  height: 100%;
+}
+
+/* main navbar */
+
+.main_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  width: 100%;
+  background-color: rgb(69, 11, 124);
+  color: rgba(255, 255, 255, 0.671);
+}
+
+.navbar_list_items_left {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 700px;
+  cursor: pointer;
+}
+
+.navbar_list_items_left .active {
+  list-style: disc;
+  color: white;
+}
+
+.navbar_list_items_right {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+  cursor: pointer;
+}
+
+.navbar_list_items_right i:first-child {
+  color: white;
+}
+
+/* hero container */
+
+.hero_container {
+  display: flex;
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  object-fit: cover;
+  position: relative;
+}
+
+.hero_container img {
+  width: 100%;
+  height: 100%;
+}
+
+.prev_arrow,
+.next_arrow {
+  position: absolute;
+  background-color: white;
+  box-shadow: 2px 4px 6px;
+  width: 27px;
+  height: 27px;
+  top: 50%;
+  border-radius: 50%;
+  padding: 6px 5px;
+}
+
+.prev_arrow,
+.next_arrow i {
+  color: rgb(69, 11, 124);
+}
+
+.prev_arrow {
+  left: -15px;
+}
+
+.next_arrow {
+  right: -15px;
+}
+
+/* small banners */
+
+.small_banners {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 20px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.banner {
+  height: 100px;
+  width: 100px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner h6 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* top coupons  */
+
+.container {
+  display: flex;
+
+  width: 85%;
+  margin: 10px 70px;
+}
+
+.top_coupons_container {
+  position: relative;
+  width: 73%;
+  margin: 0 auto;
+}
+
+.left_coupon_container {
+  display: flex;
+  gap: 20px;
+}
+
+.right_coupon_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.coupon_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 20px 10px;
+  border-radius: 8px;
+}
+.coupon_img_cont {
+  width: 160px;
+  height: 120px;
+}
+
+.coupon_img_cont img {
+  width: 100%;
+  height: 100%;
+}
+
+.prev_coupon_arrow,
+.next_coupon_arrow {
+  position: absolute;
+  background-color: white;
+  box-shadow: 2px 4px 6px;
+  width: 27px;
+  height: 27px;
+  top: 50%;
+  border-radius: 50%;
+  padding: 6px 5px;
+}
+
+.prev_coupon_arrow,
+.next_coupon_arrow i {
+  color: rgb(69, 11, 124);
+}
+
+.prev_coupon_arrow {
+  left: -15px;
+}
+
+.next_coupon_arrow {
+  right: -15px;
+}
+
+.coupon_container p{
+    margin-top: 10px;
+}
+.coupon_container button {
+    margin-top: 10px;
+  background-color: rgb(69, 11, 124);
+  color: white;
+  border-radius: 17px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 20px;
+}
+
+
+/* cashback offers */
+
+.cashback_container{
+    /* border: 1px solid red; */
+    /* width: 87%;  */
+    
+    margin: 50px 130px;
+    display: flex;
+    /* gap: 30px; */
+    flex-direction: row-reverse;
+}
+
+.cashback_container  .coupon_img_cont {
+    width: 100px;
+    height: 50px;
+  }
+
+.cashback_container .coupon_img_cont img {
+    width: 100%;
+    height: 100%;
+  }
+
+.cashback_container .right_coupon_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .top_cashback_container {
+    position: relative;
+    width: 76%;
+    margin: 0 auto;
+  }
+
+  .cashback_container .left_coupon_container {
+    display: flex;
+    gap: 40px;
+  }
+  
+
+/* offer expire banner */
+
+.expire_banner {
+  width: 1000px;
+  height: 270px;
+  margin: 0 auto;
+}
+
+.expire_banner img {
+  width: 100%;
+  height: 100%;
+}
+
+/* earn extra cashback */
+
+.earn_extra_cashback {
+  margin: 10px 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.longer_card {
+  width: 250px;
+  height: 320px;
+}
+
+.longer_card img {
+  width: 100%;
+  height: 100%;
+}
+
+/* earn bank cashback */
+
+.bank_cashback_container {
+  width: 100%;
+  display: flex;
+}
+
+.bank_cashback_container h3 {
+  margin: 30px 10px;
+}
+
+.bank_left_container {
+  padding-left: 200px;
+  width: 65%;
+}
+
+.bank_right_container {
+  width: 30%;
+  /* padding-right: 30px; */
+}
+
+.left_cards p {
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.right_cards p {
+  font-size: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.left_cards .row1,
+.row2 {
+  display: flex;
+  margin: 10px;
+  gap: 20px;
+  /* justify-content: space-between; */
+}
+
+.right_cards {
+  /* border: 1px solid black; */
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px;
+}
+
+/* .right_cards p{
+    font-size: 5px;
+} */
+
+.left_cards .image_container {
+  width: 80px;
+  height: 56px;
+}
+
+.left_cards .cards {
+  padding: 17px 33px;
+  border: 1px solid black;
+}
+
+.right_cards .image_container {
+  width: 100px;
+  height: 35px;
+}
+
+.right_cards .cards {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.image_container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* socialicon container */
+
+.social_icon_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 160px;
+  align-items: center;
+  background-color: rgb(236, 236, 236);
+}
+
+.social_icon_container i {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 23px;
+}
+
+.social_icon_container .logo {
+  width: 80px;
+  height: 70px;
+}
+
+.social_icon_container img {
+  width: 100%;
+  height: 100%;
+}
+
+.right_container_icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+  gap: 15px;
+}
+
+.right_container_icons i:first-child {
+  background-color: rgb(69, 11, 124);
+  color: white;
+}
+
+/* footer description */
+
+.desc_container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 60px 0;
+}
+
+.desc_container h2 {
+  font-family: "Prompt", sans-serif;
+  letter-spacing: 2px;
+}
+
+.aboutus_container {
+  width: 300px;
+}
+
+.aboutus_container p {
+  margin: 10px 0;
+  line-height: 23px;
+}
+
+.desc_container li {
+  margin: 10px 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  background-color: rgb(69, 11, 124);
+  color: rgba(255, 255, 255, 0.89);
+  text-align: center;
+  padding: 13px 0;
+}
